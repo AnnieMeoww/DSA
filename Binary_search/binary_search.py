@@ -13,6 +13,3 @@ def binarySearch(array, targetValue):
     else:
       min = avg + 1
   return -1
-
-
-
