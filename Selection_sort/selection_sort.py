@@ -3,7 +3,7 @@ def swap(array, firstIndex, secondIndex) :
   array[firstIndex], array[secondIndex] = array[secondIndex], array[firstIndex]
 
 # function return index of smallest value in subarray starting at `startIndex`
-def indexOfMinimum(array, startIndex) :
+def index_of_minimum(array, startIndex) :
   minIndex = startIndex
   minValue = array[startIndex]
 
@@ -13,9 +13,8 @@ def indexOfMinimum(array, startIndex) :
       minValue = elem
   return minIndex
 
-# function selection sort completely
-def selectionSort(array) :
+# complete selection sort algorithm
+def selection_sort(array) :
   for idx, elem in enumerate(array):
-    minIndex = indexOfMinimum(array, idx)
+    minIndex = index_of_minimum(array, idx)
     swap(array, idx, minIndex)
-

@@ -1,5 +1,5 @@
 # function describes binary search
-def binarySearch(array, targetValue):
+def binary_search(array, targetValue):
   min = 0
   max = len(array) - 1
   avg = 0
