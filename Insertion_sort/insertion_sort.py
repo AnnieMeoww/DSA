@@ -5,7 +5,7 @@ def insert(array, index, value) :
     index -= 1
   array[index+1] = value
 
-# complete insertion sort algorithm
+# return sorted array using insertion sort
 def insertion_sort(array) :
   for i in range(1, len(array)):
     insert(array, i - 1, array[i])
