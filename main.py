@@ -2,6 +2,7 @@ from Binary_search import binary_search
 from Selection_sort import selection_sort
 from Insertion_sort import insertion_sort
 from Recursive import relative_factorial, recursive_factorial, is_palindrome, power_with_IE
+from Merge_sort import merge_sort
 
 
 # # test array for `binary_search`
@@ -26,8 +27,13 @@ from Recursive import relative_factorial, recursive_factorial, is_palindrome, po
 # # test for `is_palindrome`
 # print(f"Is string a palindrome: {is_palindrome.is_palindrome('xyx')}")
 
-# test for `power_with_IE`
-print(f"3 raise to -1 equal {power_with_IE.power_with_IE(3, -1)}")
-print(f"3 raise to 0 (base case) equal {power_with_IE.power_with_IE(3, 0)}")
-print(f"3 raise to 1 (odd exponent) equal {power_with_IE.power_with_IE(3, 1)}")
-print(f"3 raise to 2 (even exponent) equal {power_with_IE.power_with_IE(3, 2)}")
+# # test for `power_with_IE`
+# print(f"3 raise to -1 equal {power_with_IE.power_with_IE(3, -1)}")
+# print(f"3 raise to 0 (base case) equal {power_with_IE.power_with_IE(3, 0)}")
+# print(f"3 raise to 1 (odd exponent) equal {power_with_IE.power_with_IE(3, 1)}")
+# print(f"3 raise to 2 (even exponent) equal {power_with_IE.power_with_IE(3, 2)}")
+
+# test for `merge_sort`
+array = [2, 0, 4, -7, 4 ,10, 9, 6, -50]
+merge_sort.merge_sort(array, 0 ,len(array)-1)
+print(array)
