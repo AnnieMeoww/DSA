@@ -3,7 +3,7 @@
 # input q: midpoint in array
 # input r: end index
 def merge(array, p, q, r):
-    # copy 2 halfs of array into firstHalf and secondHalf
+  # copy 2 halfs of array into firstHalf and secondHalf
   firstHalf = array[p:q+1]
   secondHalf = array[q+1:r+1]
 
